@@ -1,3 +1,6 @@
+# Form Generator
+This is a form generator made using React.js. It takes an array of objects that contains information of the different input fields that are required. The generator then returns all the components with their attributes as per the schema.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
