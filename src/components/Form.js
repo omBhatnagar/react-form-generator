@@ -1,9 +1,24 @@
 import compSelector from "../util/compSelector";
+import "./form.css";
 
 const Form = () => {
 	const data = [
-		{ type: "text", name: "text", value: "test value", id: "" },
-		{ type: "email", name: "email", value: "test mail value", id: "" },
+		{
+			type: "text",
+			name: "text",
+			value: "test value",
+			id: "",
+			class: "input",
+			flex: true,
+		},
+		{
+			type: "email",
+			name: "email",
+			value: "test mail value",
+			id: "",
+			class: "input",
+			flex: true,
+		},
 		{
 			type: "radio",
 			name: "radio1",
@@ -39,7 +54,13 @@ const Form = () => {
 	return (
 		<div>
 			{data.map((item) => (
-				<div>{compSelector(item)}</div>
+				<div
+					className={`${
+						item.flex ? "form-item-wrapper-halved" : "form-item-wrapper"
+					}`}
+				>
+					{compSelector(item)}
+				</div>
 			))}
 		</div>
 	);

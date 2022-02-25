@@ -5,7 +5,9 @@ function App() {
 	return (
 		<div className="App">
 			<h1>Form Generator</h1>
-			<Form />
+			<div className="form-wrapper">
+				<Form />
+			</div>
 		</div>
 	);
 }

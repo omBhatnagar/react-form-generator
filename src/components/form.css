@@ -1,0 +1,25 @@
+.flex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.form-item-wrapper {
+	clear: left;
+}
+
+.form-item-wrapper-halved {
+	width: 49%;
+	float: left;
+}
+
+.form-item {
+	margin: 0;
+}
+
+.input {
+	width: 100%;
+	margin: 0.75em 1em;
+	padding: 0.75em 1.5em;
+	font-size: 1.5rem;
+}
