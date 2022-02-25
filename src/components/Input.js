@@ -4,7 +4,7 @@ const Input = ({ item }) => {
 			{item.type === "text" ? (
 				<input
 					type="text"
-					onClick={item.onClick}
+					onChange={item.onChange}
 					name={item.name}
 					value={item.value}
 					id={item.id}
@@ -13,7 +13,7 @@ const Input = ({ item }) => {
 			) : item.type === "email" ? (
 				<input
 					type="email"
-					onClick={item.onClick}
+					onChange={item.onChange}
 					name={item.name}
 					value={item.value}
 					id={item.id}
@@ -22,7 +22,7 @@ const Input = ({ item }) => {
 			) : (
 				<input
 					type="password"
-					onClick={item.onClick}
+					onChange={item.onChange}
 					name={item.name}
 					value={item.value}
 					id={item.id}

@@ -7,6 +7,7 @@ const Radio = ({ item }) => {
 				value={item.value}
 				name={item.name}
 				class={item.class}
+				onChange={item.onChange}
 			/>
 			<label htmlFor={item.id}>{item.title}</label>
 		</div>
