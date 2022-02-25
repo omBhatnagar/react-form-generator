@@ -87,7 +87,6 @@ const Form = () => {
 			clonedData.push({ name: e.target.name, value: e.target.value });
 			flag = false;
 		}
-		console.log("cloned data", clonedData);
 		setFormData(clonedData);
 	}
 
