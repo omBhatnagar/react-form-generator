@@ -5,6 +5,7 @@ const Button = ({ item }) => {
 			value={item.value}
 			onClick={item.onClick}
 			id={item.id}
+			className={item.class}
 		>
 			{item.title}
 		</button>
