@@ -8,7 +8,7 @@ const Input = ({ item }) => {
 					name={item.name}
 					value={item.value}
 					id={item.id}
-					class={item.class}
+					className={item.class}
 				/>
 			) : item.type === "email" ? (
 				<input
@@ -17,7 +17,7 @@ const Input = ({ item }) => {
 					name={item.name}
 					value={item.value}
 					id={item.id}
-					class={item.class}
+					className={item.class}
 				/>
 			) : (
 				<input
@@ -26,7 +26,7 @@ const Input = ({ item }) => {
 					name={item.name}
 					value={item.value}
 					id={item.id}
-					class={item.class}
+					className={item.class}
 				/>
 			)}
 		</div>
