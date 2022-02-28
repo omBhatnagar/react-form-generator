@@ -77,34 +77,15 @@ function App() {
 	];
 
 	// Initializing state
-	const [formData, setFormData] = useState([{}]);
+	const [formData, setFormData] = useState({});
 
 	// Function to handle state for input values
 	function valueHandler(e) {
-		let flag = true;
-
-		// Remove initial empty object from state
-		let clonedData = formData.filter(
-			(formItem) => Object.keys(formItem).length !== 0
-		);
-
-		// Update the values
-		for (const clonedItem of clonedData) {
-			if (clonedItem.name === e.target.name) {
-				flag = false;
-				clonedItem.value = e.target.value;
-				break;
-			}
-		}
-		if (flag) {
-			clonedData.push({ name: e.target.name, value: e.target.value });
-			flag = false;
-		}
-		setFormData(clonedData);
+		setFormData({ ...formData, [e.target.name]: e.target.value });
 	}
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log(formData);
+		console.log("handle submit called", formData);
 	};
 	return (
 		<div className="App">
